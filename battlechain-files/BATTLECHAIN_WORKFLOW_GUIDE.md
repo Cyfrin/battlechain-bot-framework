@@ -67,7 +67,7 @@ Before deploying contracts, protocols must create a Safe Harbor Agreement that d
 3. **Chains & Contracts in Scope** - List of contracts covered by the agreement
    - Contract addresses (as strings, e.g., "0x1234...")
    - Asset recovery address (where recovered funds should be sent)
-   - Chain ID in CAIP-2 format (e.g., "eip155:325" for BattleChain)
+   - Chain ID in CAIP-2 format ("eip155:626" for BattleChain mainnet, "eip155:627" for testnet)
 
 4. **Bounty Terms**:
    - **Bounty Percentage**: What % of recovered funds the whitehat keeps (0-100)
@@ -126,7 +126,7 @@ After deployment, update your Agreement to include the new contract addresses:
 
 ```
 Call Agreement.addAccounts() with:
-- Chain ID (e.g., "eip155:325")
+- Chain ID (e.g., "eip155:626")
 - Array of account details (address + child contract scope)
 ```
 
@@ -562,7 +562,7 @@ AgreementInfo memory info = AttackRegistry.getAgreementInfo(agreementAddress);
 
 #### 6. Find Asset Recovery Address
 ```solidity
-string memory recoveryAddress = agreement.getAssetRecoveryAddress("eip155:325");
+string memory recoveryAddress = agreement.getAssetRecoveryAddress("eip155:626");
 // This is where you send recovered funds (minus your bounty if retainable)
 ```
 

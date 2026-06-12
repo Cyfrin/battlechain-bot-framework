@@ -33,7 +33,7 @@ abstract contract BattleChainSetup is Test {
     address public RECOVERY_ADDRESS;
 
     // ---- Constants ----
-    string public constant BATTLECHAIN_CAIP2 = "eip155:99999"; //@note TODO - change this 
+    string public constant BATTLECHAIN_CAIP2 = "eip155:627"; // BattleChain Testnet
 
     // ---- Deployed infrastructure ----
     BattleChainSafeHarborRegistry public safeHarborRegistry;

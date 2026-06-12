@@ -87,7 +87,7 @@ contract Agreement is Ownable {
     /// @notice Constructor that sets the details of the agreement.
     /// @param registry The BattleChain Safe Harbor Registry address
     /// @param owner The owner of this agreement
-    /// @param battleChainCaip2ChainId The CAIP-2 chain ID for BattleChain (e.g., "eip155:325")
+    /// @param battleChainCaip2ChainId The CAIP-2 chain ID for BattleChain (e.g., "eip155:626")
     /// @param details The agreement details (bounty terms, chains, contacts, etc.)
     constructor(
         address registry,

@@ -30,7 +30,7 @@ contract AgreementFactory is IAgreementFactory, Initializable, Ownable2StepUpgra
     /// @dev The Safe Harbor Registry address
     address private s_registry;
 
-    /// @dev BattleChain CAIP-2 chain identifier (e.g., "eip155:325" for testnet, "eip155:326" for mainnet)
+    /// @dev BattleChain CAIP-2 chain identifier (e.g., "eip155:627" for testnet, "eip155:626" for mainnet)
     string private s_battleChainCaip2ChainId;
 
     /// @dev Mapping to track all agreements created by this factory
